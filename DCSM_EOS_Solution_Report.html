@@ -272,6 +272,7 @@ tbody th{background:transparent;color:var(--ink-2);font-size:13.5px;letter-spaci
   </div>
 
   <h3>立即要確認的事</h3>
+  <div class="callout" style="margin-bottom:12px"><b>前提：方案內容須先經法金確認，才能配合進行辦理</b></div>
   <ul class="checks">
     <li class="top"><span class="n">1</span><b>CRM 是否仍需保留系統支援客戶管理</b><span class="w">決定走 P5 或 P2</span></li>
     <li class="top"><span class="n">2</span><b>徵審系統負責單位的書面承諾與時程</b><span class="w">並確認除移管、銷戶外，CRM 是否還有其他仍在使用的功能</span></li>
@@ -331,7 +332,7 @@ tbody th{background:transparent;color:var(--ink-2);font-size:13.5px;letter-spaci
         <tr><td>資料量 6 TB</td><td>備份、還原、複製都以小時計；優先採預先同步，縮短停機</td></tr>
         <tr><td>SQL 2017 在 2027-10-12 後無安全性更新</td><td>CRM 若無法在此之前下架，需選擇 S1（硬性期限）或 S4（需申請展延，承擔無更新期間的風險）</td></tr>
         <tr><td>全地端、金融業</td><td>排除雲端方案；EOS 軟體會成為內外稽與主管機關檢查的缺失</td></tr>
-        <tr><td>開發人力僅兩人</td><td>我方範圍須與產能相符：P5 只做報表；P2 須精簡範圍，並以試行數據決定是否增補</td></tr>
+        <tr><td>維運人力僅兩人</td><td>我方範圍須與產能相符：P5 只做報表；P2 須精簡範圍，並以試行數據決定是否增補</td></tr>
         <tr><td>維運自主性</td><td>Dynamics 地端人才稀少，EOS 後只能依賴少數委外廠商</td></tr>
       </tbody>
     </table>
@@ -710,7 +711,7 @@ tbody th{background:transparent;color:var(--ink-2);font-size:13.5px;letter-spaci
     <table>
       <thead><tr><th class="nw">路線</th><th>組合</th><th>2027-10 SQL</th><th>2029-01 CRM / OS</th><th>升級風險</th><th>成本傾向</th><th>評估</th></tr></thead>
       <tbody>
-        <tr class="pick"><td class="nw"><b>E</b> 回歸徵審，我方只做報表</td><td>P5（+ S4 或 S1，視下架時間）</td><td><span class="pill ok">不需處理</span><br><span class="note">2027-10-12 前下架時</span></td><td><span class="pill ok">解決</span><br><span class="note">可提前</span></td><td>無（除非需以 S1 後備）</td><td>我方只建報表平台；搬遷與客製開發人力都省下</td><td><span class="pill info">建議</span></td></tr>
+        <tr class="pick"><td class="nw"><b>E</b> 回歸徵審，我方只做報表</td><td>P5（+ S4 或 S1，視下架時間）</td><td><span class="pill ok">不需處理</span><br><span class="note">2027-10-12 前下架時</span></td><td><span class="pill ok">解決</span><br><span class="note">可提前</span></td><td>無（除非需以 S1 後備）</td><td>我方只建報表平台；搬遷與客製開發工作都省下</td><td><span class="pill info">建議</span></td></tr>
         <tr class="pick"><td class="nw"><b>C</b> SQL 2019 + 行內精簡客製</td><td>S1 + P2</td><td><span class="pill ok">解決</span></td><td><span class="pill ok">解決</span></td><td>低（可演練切回）</td><td>授權與主機可轉給新系統與封存庫</td><td><span class="pill info">建議</span><br><span class="note">有前置議題</span></td></tr>
         <tr><td class="nw"><b>D</b> SQL 2017 延用 + 行內精簡客製</td><td>S4 + P2</td><td><span class="pill warn">延用</span><br><span class="note">約 13–15 個月無更新</span></td><td><span class="pill ok">解決</span></td><td>無</td><td>省下搬遷人力；授權與主機延後採購</td><td><span class="pill warn">條件式可行</span></td></tr>
         <tr><td class="nw"><b>A</b> 只升 SQL</td><td>S1 + P1</td><td><span class="pill ok">解決</span></td><td><span class="pill bad">未解決</span></td><td>低</td><td>短期最低；EOS 後委外與稽核成本難估</td><td><span class="pill bad">不建議</span></td></tr>
@@ -823,6 +824,7 @@ ORDER BY total_gb DESC;</pre>
 <section id="todo">
   <div class="sec-no">十</div>
   <h2>待確認事項</h2>
+  <div class="callout" style="margin-bottom:20px"><b>辦理前提：方案內容須先經法金確認，確認後才能配合進行辦理</b><span>以下各項確認事項與時程，皆以法金確認方案內容為前提。</span></div>
   <div class="grid2 align-start">
     <div class="sub">
       <h3>立即確認（2026 Q4）</h3>
